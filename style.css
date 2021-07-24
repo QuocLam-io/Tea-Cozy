@@ -12,11 +12,22 @@ a {
 
 }
 
+header {
+    height: 69px;
+    border-bottom: 1px solid seashell;
+}
+
 .logo {
     margin: 10px;
     text-align:left
 }
 
-nav {
+/* Figure logo left & Text Right */
+nav a {
     text-align:end
+}
+
+section img {
+    width: 300px;
+    height: 200px;
 }
