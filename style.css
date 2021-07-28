@@ -6,8 +6,7 @@
     font-size: 22px;
     color: seashell;
     background-color: black;
-    opacity: .9;
-    text-align: center;
+    /* opacity: .9; */
 }
 
 header {
@@ -23,6 +22,8 @@ nav {
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 10;
+    /* opacity: 1; */
 
 }
 
@@ -43,8 +44,32 @@ li {
     list-style: none;
 }
 
-<------------------Main--------------->
+main {
+    margin-top: 69px;
+}
 
+.container {
+    display: flex;
+    justify-content: center;
+}
 .mission {
-    background-image: url(/images/background.webp);
+    background-image: url(/images/missionbg.webp);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    min-height: 500px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mission-center {
+    /* top: 50%; */
+    align-items: center;
+
+}
+
+footer {
+    
 }
