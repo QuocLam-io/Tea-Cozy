@@ -5,8 +5,12 @@
     font-family: Helvetica;
     font-size: 22px;
     color: seashell;
+    /* background-color: black; */
+    opacity: .9;
+}
+
+body {
     background-color: black;
-    /* opacity: .9; */
 }
 
 header {
@@ -23,14 +27,21 @@ nav {
     top: 0;
     left: 0;
     z-index: 10;
+    background-color: black;
+
     /* opacity: 1; */
 
 }
 
 .logo {
-    height: auto;
-    width: auto;
+    /* height: auto; */
+    /* width: auto; */
+    /* margin: auto; */
     max-height: 50px;
+}
+
+a {
+    
 }
 
 .nav-links {
@@ -50,24 +61,49 @@ main {
 
 .container {
     display: flex;
+    margin: auto;
     justify-content: center;
-}
-.mission {
     background-image: url(/images/missionbg.webp);
     background-position: center;
     background-size: cover;
-    display: flex;
     min-height: 500px;
+    max-height: 500px;
     width: 90%;
-    justify-content: center;
     align-items: center;
     text-align: center;
 }
+/* .mission { */
+    /* background-image: url(/images/missionbg.webp); */
+    /* background-position: center; */
+    /* background-size: cover; */
+    /* display: flex; */
+    /* min-height: 500px; */
+    /* width: 90%; */
+    /* justify-content: center; */
+    /* align-items: center;
+    text-align: center; */
+/* } */
 
 .mission-center {
     /* top: 50%; */
     align-items: center;
+    background-color: black;
 
+}
+
+.teas {
+    /* display: flex; */
+    min-height: 500px;
+    width: 90%;
+}
+
+.teas h2 {
+    display: inline-block;
+}
+
+.teas img {
+    max-width: 300px;
+    max-height: 200px;
 }
 
 footer {
