@@ -3,17 +3,19 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: Helvetica;
+    font-weight: normal;
     font-size: 22px;
     color: seashell;
     /* background-color: black; */
-    opacity: .9;
+    /* opacity: .9; */
 }
 
 body {
     background-color: black;
 }
 
-header {
+h1 {
+    font-weight: bold;
 }
 nav {
     border-bottom: solid 1px seashell;
@@ -36,7 +38,6 @@ nav {
 .logo {
     /* height: auto; */
     /* width: auto; */
-    /* margin: auto; */
     max-height: 50px;
 }
 
@@ -91,19 +92,27 @@ main {
 
 }
 
-.teas {
-    /* display: flex; */
-    min-height: 500px;
-    width: 90%;
+
+.tea-card-container {
+    /* border: solid 1px red; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
-.teas h2 {
-    display: inline-block;
+.header {
+    text-align: center;
+    display: block;
 }
 
-.teas img {
+.tea-card-container, img {
     max-width: 300px;
     max-height: 200px;
+    /* margin: 10px; */
+}
+
+figure {
 }
 
 footer {
