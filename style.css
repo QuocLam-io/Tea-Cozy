@@ -17,6 +17,8 @@ body {
 h1 {
     font-weight: bold;
     text-decoration: underline;
+    letter-spacing: 3px;
+    padding: 10px 0px;
 }
 nav {
     border-bottom: solid 1px seashell;
@@ -29,32 +31,33 @@ nav {
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 1;
     background-color: black;
-
-    /* opacity: 1; */
-
 }
 
 .logo {
-    /* height: auto; */
-    /* width: auto; */
     max-height: 50px;
-}
-
-a {
-    
 }
 
 .nav-links {
     display: flex;
     justify-content: space-between;
     width: 40%;
-    /* border: solid 1px yellow; */
 }
 
 li {
     list-style: none;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: white;
+}
+
+.burger {
+    display: none;
 }
 
 main {
@@ -120,6 +123,7 @@ main {
 }
 
 .banner {
+    /* display: flex; */
     height: 500px;
     width: 90%;
     margin: 40px auto auto auto;
@@ -141,6 +145,7 @@ main {
     margin: 15px auto auto auto;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -169,4 +174,42 @@ footer {
     display: block;
     float: left;
     padding-left: ;
+}
+
+@media screen and (max-width: 535px){
+    body {
+        /* overflow-x: hidden; */
+    }
+    
+    .nav-links {
+        position:absolute;
+        left: 0px;
+        height: 85vh;
+        top: 69px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease-in;
+    }
+    
+    .burger {
+        display: inline;
+        cursor: wait;
+    }
+}
+
+@media screen and (max-width:852px) {
+
+    .nav-links {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+    }
+}
+
+nav-active {
+    transform: translateX(0%);
 }
