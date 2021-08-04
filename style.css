@@ -183,7 +183,7 @@ footer {
     
     .nav-links {
         position:absolute;
-        left: 0px;
+        right: 0px;
         height: 85vh;
         top: 69px;
         background-color: black;
@@ -191,13 +191,13 @@ footer {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        transform: translateX(-100%);
+        transform: translateX(100%);
         transition: transform 0.5s ease-in;
     }
     
     .burger {
-        display: inline;
-        cursor: wait;
+        display: block;
+        cursor: pointer;
     }
 }
 
@@ -208,8 +208,9 @@ footer {
         justify-content: space-between;
         width: 70%;
     }
+
 }
 
-nav-active {
+.nav-active {
     transform: translateX(0%);
 }
