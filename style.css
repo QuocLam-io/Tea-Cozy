@@ -54,6 +54,7 @@ li {
     height: 3px;
     margin: 5px;
     background-color: white;
+    transition: all 0.3s ease
 }
 
 .burger {
@@ -192,9 +193,17 @@ footer {
         align-items: center;
         width: 100%;
         transform: translateX(100%);
-        transition: transform 0.5s ease-in;
+        transition: transform .6s ease-in;
     }
-    
+
+    .nav-active {
+        transform: translateX(0%);
+    }   
+
+    .nav-links li {
+        opacity: 0;
+    }
+
     .burger {
         display: block;
         cursor: pointer;
@@ -209,8 +218,33 @@ footer {
         width: 70%;
     }
 
+
+
 }
 
 .nav-active {
     transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.andrea .line1 {
+    transform: translate(0px,8px) rotate(45deg);
+}
+.andrea .line2 {
+    opacity: 0;
+}
+.andrea .line3 {
+    transform: translate(0px,-8px) rotate(-45deg);
+
 }
